@@ -16,7 +16,7 @@ public class MyBot extends TelegramLongPollingBot {
 
             SendMessage response = messageHandler.handleMessage(update);
             try {
-                execute(response); // Отправляем сообщение
+                execute(response); 
             } catch (TelegramApiException e) {
                 e.printStackTrace();
             }
@@ -24,15 +24,14 @@ public class MyBot extends TelegramLongPollingBot {
     }
 
 
-    // Возвращает имя бота, указанное в BotFather
     @Override
     public String getBotUsername() {
-        return "BestGameBotEverBot"; // Замените на имя вашего бота
+        return "BestGameBotEverBot"; 
     }
 
     // Возвращает токен бота
     @Override
     public String getBotToken() {
-        return "7604379903:AAEftALdiWddaXG_KggLhn3FbTD2FxdiYKg"; // Вставьте токен, выданный BotFather
+        return "777"; // токен
     }
 }
